@@ -1,0 +1,350 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+     <title>RN Inspire Services pvt.ltd.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Recruitment, Staffing, Placement, Placement agency, Placement consultancy, Manpower supplier, Talent search, Head-hunter,
+	Employability, Finishing Skills, Job Consultant, Job Consultancy, HR Consultancy, Human Resource Consultancy, Ahmedabad,
+	Gujarat, Rajasthan, Maharashtra, Surat, Mumbai, Jaipur, Kota, Reliable, Trusted, Genuine, MNC Jobs, Best Jobs, Life Goals,
+	Life Dreams, Happiness, IT Jobs, Non-IT Jobs, Naukri, Vacancy" />
+
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> <!-- Bootstrap-Core-CSS -->
+	<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+	<link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <style>
+        h2 {
+            color: green;
+            font-weight: 400;
+            padding: 75px 50px 75px 50px;}
+
+        h3 {padding: 30px 40px 30px 40px}
+
+        .xyz {
+            text-align: justify;
+            padding: 50px;
+             width: 70%;}
+
+
+        .apply a:link, a:visited {
+            background-color: green;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 150px;
+            margin-left: 50px;
+        }
+
+        .apply  a:hover, a:active {
+            background-color: #c4d114;}
+
+
+        h5 { padding: 10px;
+            margin: 10px}
+
+        .fb {
+            float: right;
+            margin: 100px;
+            border: 5px inset #d6ff99;
+            padding: 30px;}
+
+        .social {
+            padding: 10px;
+            float: left;}
+
+    </style>
+   </head>
+   <body>
+      <!--Header-->
+
+  <header>
+	 <div class="agile-banner_nav">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href=    'http://startinspire.com'   > Inspire</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href=    'http://startinspire.com'   >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=    'http://startinspire.com/index.html#about'   >About</a>
+      </li>
+	  <li class="dropdown nav-item">
+								<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Services
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu agile_short_dropdown">
+									<li>
+										<a href=    'http://startinspire.com/services.html'   >For company</a>
+									</li>
+									<li>
+										<a href=    'http://startinspire.com/services2.html'   >For Institute</a>
+									</li>
+									<li>
+										<a href=    'http://startinspire.com/services - individual.html'   >For Individual</a>
+									</li>
+								</ul>
+							</li>
+
+	   <li class="nav-item">
+        <a class="nav-link" href=    'http://startinspire.com/index.html#Testim'   >Testimonials</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href=    'http://startinspire.com/gallery.html'   >Gallery</a>
+	  </li>
+	  <li class="nav-item">
+			<a class="nav-link" href="http://startinspire.com/experience.html">Experience</a>
+		  </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href=    '{% url 'career:jobs' %}'   >Career</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="https://startinspire16.wordpress.com/" target="_blank">Blog</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href=    'http://startinspire.com/contact.html'   >Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</div>
+</header>
+      <!--//navbar-->
+      <!-- banner -->
+      <div class="inner_page_about">
+      </div>
+	  <!--//banner -->
+
+      <!-- fb share-->
+
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <!--//fb share-->
+
+      <!--details-->
+
+
+          <h2><b>{{ jobx.job_title }}</b></h2>
+
+      <div class="fb" >
+          <h4><b>SHARE THIS JOB OPENING</b></h4>
+          <br>
+          <div class="social">
+              <div class="fb-share-button" data-href="http://127.0.0.1:8000/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+          </div>
+          <div class="social">
+               <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+               <script type="IN/Share" data-url="http://127.0.0.1:8000/"></script>
+          </div>
+      </div>
+
+           <h3><b>Description:</b></h3>
+              <div class="xyz">
+                  {{ jobx.job_description }}
+                  <h5><b>Salary:  {{ jobx.salary }}</b></h5>
+              </div>
+           <h3><b>Requirements:</b></h3>
+              <div class="xyz">
+                  {{ jobx.requirements }}
+                  <h5><b>Experience:  {{ jobx.experience }}</b></h5>
+              </div>
+          <div class="apply">
+                <a href="{% url 'career:career' %}">Apply for this position</a>
+          </div>
+      <!--//details-->
+
+	  <!--/footer-->
+		<section class="footer py-3">
+			<br>
+	<div class="container">
+		<div class="row py-4 foot-resp">
+
+			<!--<div class="col-lg-4  footer_social-icons">
+				<a class="facebook" href="https://www.facebook.com/startinspire16/">
+					<span class="fab fa-facebook-f"  ></span>
+				</a>
+				<a class="twitter" href="https://twitter.com/startinspire16">
+					<span class="fab fa-twitter"></span>
+				</a>
+				<!<a class="pinterest" href="#">
+					<span class="fab fa-pinterest-p"></span>
+				</a>
+				<a class="linkedin" href="https://www.linkedin.com/company/inspire-services?trk=company_logo">
+					<span class="fab fa-linkedin-in"></span>
+				</a>
+			</div>-->
+			</div>
+
+			<div class="row py-3">
+				<div class="col-lg-4  footer_grid foot-resp ">
+					<h3></h3>
+					<p>"Authentic and reliable services in the domains of Soft Skills training, projects planning and advisory for businesses and start-ups."
+						 </p>
+				</div>
+				<div class="col-lg-4  footer_grid foot-resp">
+
+
+				</div>
+				<div class="col-lg-4  footer_grid foot-resp">
+					<h3>Contact Info</h3>
+					<ul class="address">
+						<li><i class="fas fa-map-marker-alt" aria-hidden="true"></i>545, Yash Arian, Swami Vivekanand Chowk, Memnagar, Ahmedabad</li>
+						<li><i class="far fa-envelope-open" aria-hidden="true"></i><a href="mailto:inspire@startinspire.com">inspire@startinspire.com</a></li>
+						<li><i class="fas fa-phone" aria-hidden="true"></i>079-48001712, 9687690218</li>
+						<li><i class="glyphicon glyphicon-time" aria-hidden="true"></i>Mon-Sat 09:00 to 19:00</li>
+					</ul>
+				</div>
+			   </div>
+			</div>
+		</section>
+
+          <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title" style="margin:auto; padding-right:143px">Terms and Conditions</h4>
+			</div>
+			<div class="modal-body">
+			  <p style="text-align:justify; margin: 1rem;">The information contained in this website is for general information purposes only. The information is provided by RNISPL or its associates in their individual or organizational capabilities. While we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+
+	In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+
+	Through this website you are able to link to other websites which are not under the control of RNISPL. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them. Every effort is made to keep the website up and running smoothly. However, RNISPL takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+
+		</div>
+	  </div>
+	 <!--//modal-->
+
+			<!--//footer-->
+			<section class="copy-rights">
+
+			<p class="copyright">
+					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Terms and Conditions</button>
+			<a class="facebook" href="https://www.facebook.com/startinspire16/">
+				<span class="fab fa-facebook-f"  style="padding:20px" ></span>
+			</a> <a class="twitter" href="https://twitter.com/startinspire16">
+				<span class="fab fa-twitter" style="padding:20px;" ></span>
+			</a><a class="linkedin" href="https://www.linkedin.com/company/inspire-services?trk=company_logo">
+				<span class="fab fa-linkedin-in" style="padding:20px;  margin-right:120px" ></span>
+			</a>
+			© 2016-2018 RN Inspire Services Pvt. Ltd . All rights reserved
+		</p>
+
+			</section>
+
+			<!-- bootstrap-modal-pop-up -->
+<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				Consult Pro
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<img src="{% static 'images/m1.jpg'%}" alt=" " class="img-responsive img-fluid" />
+				<p>Ut enim ad minima veniam, quis nostrum
+					exercitationem ullam corporis suscipit laboriosam,
+					nisi ut aliquid ex ea commodi consequatur? Quis autem
+					vel eum iure reprehenderit qui in ea voluptate velit
+					esse quam nihil molestiae consequatur, vel illum qui
+					dolorem eum fugiat quo voluptas nulla pariatur.
+					<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+						esse quam nihil molestiae consequatur.</i></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //bootstrap-modal-pop-up -->
+
+     <!-- js -->
+	<script type="text/javascript" src="{% static 'js/jquery-2.2.3.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+	<!-- //js -->
+	<!-- clients js file-->
+<script src="{% static 'js/jquery.wmuSlider.js'%}"></script>
+	<script>
+		$('.example1').wmuSlider();
+	</script>
+<!-- //clients js file -->
+
+	<script type="text/javascript" src="{% static 'js/numscroller-1.0.js'%}"></script>
+<!-- start-smooth-scrolling -->
+	<script src="{% static 'js/move-top.js'%}"></script>
+	<script src="{% static 'js/easing.js'%}"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+
+	<!-- smooth-scrolling-of-move-up -->
+	<script>
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+
+	<!-- smooth scrolling js -->
+	<script src="{% static 'js/SmoothScroll.min.js'%}"></script>
+	<!-- //smooth scrolling js -->
+
+
+   </body>
+</html>
